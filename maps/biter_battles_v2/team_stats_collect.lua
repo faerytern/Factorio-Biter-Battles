@@ -60,7 +60,11 @@ TeamStatsCollect.items_to_show_summaries_of = {
     { item = 'stone-wall', placed = true },
     { item = 'gun-turret', placed = true },
     { item = 'flamethrower-turret', placed = true },
-    { item = 'laser-turret', placed = true },
+    { item = 'laser-turret', placed = true, space_after = true },
+
+    { item = 'firearm-magazine', hide_by_default = true },
+    { item = 'piercing-rounds-magazine', hide_by_default = true },
+    { item = 'uranium-rounds-magazine', hide_by_default = true },
 }
 
 TeamStatsCollect.damage_render_info = {
@@ -83,6 +87,7 @@ TeamStatsCollect.damage_render_info = {
 
 ---List of entity types.
 local tracked_inventories = {
+    ['ammo-turret'] = true,
     ['assembling-machine'] = true,
     ['boiler'] = true,
     ['car'] = true,
